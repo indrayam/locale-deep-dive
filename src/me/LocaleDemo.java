@@ -9,11 +9,8 @@ public class LocaleDemo {
         Locale germanyLocale = new Locale.Builder().setLanguage("DE").setRegion("276").build();
         Locale franceLocale = new Locale.Builder().setLanguage("FR").setRegion("250").build();
         // Locale.setDefault(indiaLocale);
-        // Locale.setDefault(Locale.Category.FORMAT, indiaLocale);
         // Locale.setDefault(germanyLocale);
-        // Locale.setDefault(Locale.Category.FORMAT, germanyLocale);
-        // Locale.setDefault(franceLocale);
-        Locale.setDefault(Locale.Category.FORMAT, franceLocale);
+        Locale.setDefault(franceLocale);
         double x = 10000 / 3.0;
         System.out.println(x);
         System.out.printf("|%+0,10.2f|%n", x);
